@@ -58,7 +58,8 @@ public class RL3PLApi extends BaseTest{
 	}
 	
 	public static String Rl3PlTokenAPI() {
-		
+		String credentials = "a0d110d5-0212-4fb6-b54d-0053136c374c" + ":" + "DwY8Q~2YzS8pMwlQX8.XoHKWMv1nQfewVmjRxc6J";//(Username:Password)
+		String authorization = "Basic " +Base64.getEncoder().encodeToString(credentials.getBytes());
 		System.out.println("Vimlesh Kumar " +authorization);
 		
 		RequestSpecification request = RestAssured.given();
